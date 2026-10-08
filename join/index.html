@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Play Drift early</title>
+<meta name="description" content="Join the Drift beta on Google Play in three taps.">
+<meta name="theme-color" content="#10101e">
+<link rel="icon" href="icon.png">
+<style>
+  :root {
+    --bg: #10101e; --card: #191a2e; --line: #2a2c48;
+    --text: #f2f4f8; --dim: #aab3c5;
+    --orange: #f3722c; --goal: #43aa8b; --star: #f9c74f; --blue: #4cc9f0;
+  }
+  * { box-sizing: border-box; }
+  html { background: var(--bg); }
+  body {
+    margin: 0; min-height: 100vh; color: var(--text); background: var(--bg);
+    font: 17px/1.55 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    background-image:
+      radial-gradient(1px 1px at 12% 8%, #fff8 50%, transparent 51%),
+      radial-gradient(1px 1px at 78% 14%, #fff6 50%, transparent 51%),
+      radial-gradient(1.5px 1.5px at 42% 22%, #fff5 50%, transparent 51%),
+      radial-gradient(1px 1px at 90% 40%, #fff5 50%, transparent 51%),
+      radial-gradient(1px 1px at 6% 52%, #fff6 50%, transparent 51%),
+      radial-gradient(1.5px 1.5px at 66% 64%, #fff4 50%, transparent 51%),
+      radial-gradient(1px 1px at 24% 82%, #fff5 50%, transparent 51%),
+      radial-gradient(1px 1px at 86% 90%, #fff6 50%, transparent 51%);
+    background-attachment: fixed;
+  }
+  main { max-width: 30rem; margin: 0 auto; padding: 2.5rem 16px 3rem; }
+  header { text-align: center; margin-bottom: 1.8rem; }
+  header img { width: 88px; height: 88px; border-radius: 22px; box-shadow: 0 8px 30px #0008; }
+  h1 { font-size: 2.6rem; letter-spacing: -.02em; margin: .6rem 0 .1rem; font-weight: 700; }
+  h1 span { color: var(--orange); }
+  .tag { color: var(--dim); margin: 0; }
+  .need {
+    margin: 1.4rem 0 1.6rem; padding: .8rem 1rem; border-radius: 12px;
+    background: #f9c74f14; border: 1px solid #f9c74f40; font-size: .95rem;
+  }
+  .need strong { color: var(--star); }
+  ol { list-style: none; padding: 0; margin: 0; counter-reset: s; }
+  li {
+    counter-increment: s; position: relative;
+    background: var(--card); border: 1px solid var(--line); border-radius: 16px;
+    padding: 1.1rem 1.1rem 1.15rem 3.6rem; margin-bottom: .9rem;
+  }
+  li::before {
+    content: counter(s); position: absolute; left: 1rem; top: 1.05rem;
+    width: 1.9rem; height: 1.9rem; border-radius: 50%; display: grid; place-items: center;
+    font-weight: 700; font-size: 1rem; color: var(--bg); background: var(--orange);
+  }
+  li:last-child::before { background: var(--goal); }
+  h2 { font-size: 1.12rem; margin: .1rem 0 .25rem; }
+  li p { margin: 0 0 .85rem; color: var(--dim); font-size: .95rem; }
+  .btn {
+    display: block; text-align: center; text-decoration: none; font-weight: 650;
+    padding: .8rem 1rem; border-radius: 12px; color: var(--bg); background: var(--text);
+  }
+  .btn:active { transform: scale(.98); }
+  li:last-child .btn { background: var(--goal); color: #fff; }
+  details {
+    margin-top: 1.6rem; background: var(--card); border: 1px solid var(--line);
+    border-radius: 14px; padding: .85rem 1.1rem;
+  }
+  summary { cursor: pointer; font-weight: 600; }
+  details ul { padding-left: 1.1rem; margin: .7rem 0 .2rem; color: var(--dim); font-size: .93rem; }
+  details li { all: unset; display: list-item; margin-bottom: .5rem; }
+  details li::before { content: none; }
+  details b { color: var(--text); }
+  .after { text-align: center; color: var(--dim); font-size: .93rem; margin-top: 2rem; }
+  a { color: var(--blue); }
+</style>
+</head>
+<body>
+<main>
+  <header>
+    <img src="icon.png" alt="">
+    <h1>drift<span>.</span></h1>
+    <p class="tag">A gravity-slingshot puzzle. One shot. Bend it around the planets.</p>
+  </header>
+
+  <div class="need">
+    You'll need an <strong>Android phone</strong> and a <strong>Google account</strong>
+    (the one signed in to the Play Store). The beta is open in the
+    <strong>UK and Ireland</strong>.
+  </div>
+
+  <ol>
+    <li>
+      <h2>Join the tester group</h2>
+      <p>Sign in with the same Google account your Play Store uses, then tap
+        <b>Join group</b>.</p>
+      <a class="btn" href="https://groups.google.com/g/drift-testers/about">Join the group</a>
+    </li>
+    <li>
+      <h2>Become a tester</h2>
+      <p>Tap <b>Become a tester</b> on the Google Play page that opens.</p>
+      <a class="btn" href="https://play.google.com/apps/testing/com.conor.drift">Become a tester</a>
+    </li>
+    <li>
+      <h2>Install Drift</h2>
+      <p>Opens the Play Store. Install like any other app.</p>
+      <a class="btn" href="https://play.google.com/store/apps/details?id=com.conor.drift">Get it on Google Play</a>
+    </li>
+  </ol>
+
+  <details>
+    <summary>Something not working?</summary>
+    <ul>
+      <li><b>No "Join group" button?</b> You're not signed in. Sign in at the
+        top of the page and it appears.</li>
+      <li><b>Play says the app isn't available?</b> Access can take a few
+        minutes to arrive after step 2. Wait a moment and try step 3 again.</li>
+      <li><b>More than one Google account on your phone?</b> In the Play Store,
+        tap your profile picture and switch to the account you joined with.</li>
+      <li><b>"Become a tester" says you're not eligible?</b> Step 1 hasn't
+        gone through yet, or you joined with a different account.</li>
+    </ul>
+  </details>
+
+  <p class="after">
+    Thanks for playing! Please open it a few times over the next two weeks, because
+    that helps Drift get to a full launch. Got stuck, found a bug, or loved a level?<br>
+    <a href="mailto:rocketbrosgamedevs@gmail.com?subject=Drift%20beta">rocketbrosgamedevs@gmail.com</a>
+  </p>
+</main>
+</body>
+</html>

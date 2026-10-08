@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Drift beta sign</title>
+<style>
+  @page { size: A4 portrait; margin: 0; }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; background: #10101e; color: #f2f4f8; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    -webkit-print-color-adjust: exact; print-color-adjust: exact;
+  }
+  .sheet {
+    width: 210mm; height: 297mm; margin: 0 auto; padding: 22mm 18mm;
+    display: flex; flex-direction: column; align-items: center; text-align: center;
+  }
+  .icon { width: 34mm; border-radius: 8mm; }
+  h1 { font-size: 30mm; line-height: 1; margin: 6mm 0 2mm; letter-spacing: -.02em; }
+  h1 span { color: #f3722c; }
+  .tag { font-size: 6.5mm; color: #aab3c5; margin: 0 0 10mm; }
+  .cta { font-size: 11mm; font-weight: 700; margin: 0 0 7mm; }
+  .qr { width: 95mm; height: 95mm; background: #fff; padding: 4mm; border-radius: 6mm; }
+  .qr img { width: 100%; height: 100%; display: block; }
+  .steps { font-size: 6mm; color: #aab3c5; margin: 9mm 0 0; line-height: 1.6; }
+  .steps b { color: #f2f4f8; }
+  .small { margin-top: auto; font-size: 4.2mm; color: #aab3c5; }
+  @media screen { body { padding: 16px 0; } .sheet { max-width: 100%; height: auto; min-height: 297mm; } }
+</style>
+</head>
+<body>
+<div class="sheet">
+  <img class="icon" src="icon.png" alt="">
+  <h1>drift<span>.</span></h1>
+  <p class="tag">a gravity-slingshot puzzle</p>
+  <p class="cta">Scan to play the beta</p>
+  <div class="qr"><img src="qr.svg" alt="QR code to the Drift beta page"></div>
+  <p class="steps"><b>Join</b> the group &nbsp;→&nbsp; <b>Become a tester</b> &nbsp;→&nbsp; <b>Install</b></p>
+  <p class="small">Android · UK &amp; Ireland · cobaloba.github.io/drift-privacy/join</p>
+</div>
+</body>
+</html>
